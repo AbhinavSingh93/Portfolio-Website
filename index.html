@@ -3,74 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Abhinav Portfolio</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./style/styles.css">
+    <title>Abhinav Singh - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <nav>
+        <div class="container">
             <h1>Abhinav Singh</h1>
-            <ul>
-                <li><a href="as-container">Home</a></li>
-                <li><a href="aprojects">Project</a></li>
-                <li><a href="acontact">Home</a></li>
-            </ul>
-            <button id="btn">
-                <i class="fa-solid fa-bars"></i>
-            </button>
-        </nav>
-    </header>
-    <div class="icons">
-        <a href="#">
-          <i class="fa-brands fa-github"></i>
-          <div class="line"></div>
-          <i class="fa-brands fa-linkedin-in"></i>
-        </a>
-    </div>
-    <section>
-        <div class="s-container" id="s-container">
-           <div class="content">
-            <span class="subtitle">Hello</span>
-               <h1 class="title">
-                I'm<span> Abhinav <br></span>a Software Developer.
-               </h1>
-               <p class="description">
-                Welcome to my software developer realm! I'm Abhinav Singh,a dedicated and innovative software developer.My objective 
-                is to collaborate with a dynamic team,tackle complex challenges,and innovate cutting-edge solutions that drive the advancement of
-                technology and enhance user experiences with ecosystem.
-               </p>
-               <div class="buttons">
-                <a href="#">About me</a>
-                <a href="#">Portfolio</a>
-               </div>
-           </div>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
         </div>
-        <div class="image">
-            <img  class="imageme" src="./images/20240612_015012.jpg" alt="pfp">
+    </header>
+
+    <section id="about" class="section">
+        <div class="container about-container">
+            <div class="about-text">
+                <h2>About Me</h2>
+                <p>
+                    Hi, I'm Abhinav Singh, a passionate web developer with a love for creating interactive and visually appealing websites. I have experience in HTML, CSS, JavaScript, Node.js, and I enjoy building projects that solve real-world problems.
+                </p>
+            </div>
+            <div class="about-photo">
+                <img src="images/20240211_100443.jpg" alt="Photo">
+            </div>
         </div>
     </section>
 
-    <div class="projects-section" id="projects">
-        <div class="header">
-            <h3>Projects</h3>
-            <h1>Some of My Work:</h1>
-        </div>
-        <div class="wrapper">
-            <div class="project-card">
-                <div class="project-img-container">
-                 <img src=""  class="project-image" alt="project 1">
+    <section id="projects" class="section">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="projects">
+                <div class="project">
+                    <h3>Sorting Algorithm Visualizer</h3>
+                    <p>
+                        Designed an interactive web-based application using HTML, CSS, and JavaScript to visualize sorting algorithms like Bubble Sort and Selection Sort. Used async JavaScript for smooth and engaging visualizations.
+                    </p>
                 </div>
-            </div>
-            <div class="projetc-content">
-                <h3>Youtube Clone</h3>
-                <div class="check-project">
-                    <a href="#" target="_blank">
-                        <i class="fa-brands fa-github"></i>
-                    </a>
+                <div class="project">
+                    <h3>CryptoCurrency Price Tracker</h3>
+                    <p>
+                        Developed a responsive web application to track real-time cryptocurrency prices, with Node.js backend and a clean UI using HTML, CSS, and JavaScript.
+                    </p>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
+
+    <section id="skills" class="section">
+        <div class="container">
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Node.js</li>
+                <li>SQL</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <p>You can reach me at: <a href="mailto:abhinavsingh18813@gmail.com">abhinavsingh18813@gmail.com</a></p>
+            <div class="socials">
+                <a href="https://github.com/AbhinavSingh93" target="_blank">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="GitHub">
+                </a>
+                <a href="https://www.linkedin.com/in/abhinav-singh-a3a10b22a/" target="_blank">
+                    <img class=" linkedin-image" src="https://upload.wikimedia.org/wikipedia/commons/0/01/LinkedIn_Logo.svg" alt="LinkedIn">
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Abhinav Singh. All Rights Reserved.</p>
+        </div>
+    </footer>
 </body>
 </html>
